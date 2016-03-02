@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    @keyframes slidy {
+      0% {
+        left: 0%;
+      }
+      20% {
+        left: 0%;
+      }
+      25% {
+        left: -100%;
+      }
+      45% {
+        left: -100%;
+      }
+      50% {
+        left: -200%;
+      }
+      70% {
+        left: -200%;
+      }
+      75% {
+        left: -300%;
+      }
+      95% {
+        left: -300%;
+      }
+      100% {
+        left: -400%;
+      }
+    }
+
+    div#slider {
+      position: relative;
+      overflow: hidden;
+      width: 500px;
+      height: 540px;
+    }
+
+    div#slider .imgs img {
+      width: 20%;
+      float: left;
+    }
+
+    div#slider .imgs {
+      position: absolute;
+      width: 500%;
+      top: 0;
+      left: 0;
+      animation: 5s slidy infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="slider">
+    <div class="imgs">
+      <img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
+      <img src="http://demosthenes.info/assets/images/taj-mahal.jpg" alt="">
+      <img src="http://demosthenes.info/assets/images/ibiza.jpg" alt="">
+      <img src="http://demosthenes.info/assets/images/ankor-wat.jpg" alt="">
+      <img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="">
+    </div>
+  </div>
+</body>
+
+</html>
